@@ -1,0 +1,659 @@
+@charset "UTF-8";
+
+@keyframes panelInUp {
+    0%,100% {
+        -webkit-transition-timing-function: cubic-bezier(0.23, 0.77, 0.34, 0.99);
+        transition-timing-function: cubic-bezier(0.23, 0.77, 0.34, 0.99)
+    }
+
+    0% {
+        -webkit-transform: translate3d(0, 150%, 0);
+        transform: translate3d(0, 150%, 0)
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes panelOutDown {
+    0%,100% {
+        -webkit-transition-timing-function: cubic-bezier(0.23, 0.77, 0.34, 0.99);
+        transition-timing-function: cubic-bezier(0.23, 0.77, 0.34, 0.99)
+    }
+
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 150%, 0);
+        transform: translate3d(0, 150%, 0)
+    }
+}
+
+.panel-body h5 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.m-a-0 {
+    margin: 0 !important
+}
+
+.m-t-0 {
+    margin-top: 0 !important;
+}
+
+.m-r-0 {
+    margin-right: 0 !important
+}
+
+.m-b-0 {
+    margin-bottom: 0 !important
+}
+
+.m-l-0 {
+    margin-left: 0 !important
+}
+
+.m-x-0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important
+}
+
+.m-y-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important
+}
+
+.m-a-5 {
+    margin: 5px !important
+}
+
+.m-t-5 {
+    margin-top: 5px !important;
+}
+
+.m-r-5 {
+    margin-right: 5px !important
+}
+
+.m-b-5 {
+    margin-bottom: 5px !important
+}
+
+.m-l-5 {
+    margin-left: 5px !important
+}
+
+.m-x-5 {
+    margin-right: 5px !important;
+    margin-left: 5px !important
+}
+
+.m-y-5 {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important
+}
+
+.m-a {
+    margin: 15px !important
+}
+
+.m-t {
+    margin-top: 15px !important
+}
+
+.m-r {
+    margin-right: 15px !important
+}
+
+.m-b {
+    margin-bottom: 15px !important;
+}
+
+.m-l {
+    margin-left: 15px !important
+}
+
+.m-x {
+    margin-right: 15px !important;
+    margin-left: 15px !important
+}
+
+.m-y {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important
+}
+
+.m-x-auto {
+    margin-right: auto !important;
+    margin-left: auto !important
+}
+
+.m-a-md {
+    margin: 22px !important
+}
+
+.m-t-md {
+    margin-top: 22px !important
+}
+
+.m-r-md {
+    margin-right: 22px !important
+}
+
+.m-b-md {
+    margin-bottom: 22px !important
+}
+
+.m-l-md {
+    margin-left: 22px !important
+}
+
+.m-x-md {
+    margin-right: 22px !important;
+    margin-left: 22px !important
+}
+
+.m-y-md {
+    margin-top: 22px !important;
+    margin-bottom: 22px !important
+}
+
+.m-a-lg {
+    margin: 45px !important
+}
+
+.m-t-lg {
+    margin-top: 45px !important
+}
+
+.m-r-lg {
+    margin-right: 45px !important
+}
+
+.m-b-lg {
+    margin-bottom: 45px !important
+}
+
+.m-l-lg {
+    margin-left: 45px !important
+}
+
+.m-x-lg {
+    margin-right: 45px !important;
+    margin-left: 45px !important
+}
+
+.m-y-lg {
+    margin-top: 45px !important;
+    margin-bottom: 45px !important
+}
+
+.p-a-0 {
+    padding: 0 !important
+}
+
+.p-t-0 {
+    padding-top: 0 !important
+}
+
+.p-r-0 {
+    padding-right: 0 !important
+}
+
+.p-b-0 {
+    padding-bottom: 0 !important
+}
+
+.p-l-0 {
+    padding-left: 0 !important
+}
+
+.p-x-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important
+}
+
+.p-y-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important
+}
+
+.p-a-5 {
+    padding: 5px !important
+}
+
+.p-t-5 {
+    padding-top: 5px !important
+}
+
+.p-r-5 {
+    padding-right: 5px !important
+}
+
+.p-b-5 {
+    padding-bottom: 5px !important
+}
+
+.p-l-5 {
+    padding-left: 5px !important
+}
+
+.p-x-5 {
+    padding-right: 5px !important;
+    padding-left: 5px !important
+}
+
+.p-y-5 {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important
+}
+
+.p-a {
+    padding: 15px !important
+}
+
+.p-t {
+    padding-top: 15px !important
+}
+
+.p-r {
+    padding-right: 15px !important
+}
+
+.p-b {
+    padding-bottom: 15px !important
+}
+
+.p-l {
+    padding-left: 15px !important
+}
+
+.p-x {
+    padding-right: 15px !important;
+    padding-left: 15px !important
+}
+
+.p-y {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important
+}
+
+.p-a-md {
+    padding: 22px !important
+}
+
+.p-t-md {
+    padding-top: 22px !important
+}
+
+.p-r-md {
+    padding-right: 22px !important
+}
+
+.p-b-md {
+    padding-bottom: 22px !important
+}
+
+.p-l-md {
+    padding-left: 22px !important
+}
+
+.p-x-md {
+    padding-right: 22px !important;
+    padding-left: 22px !important
+}
+
+.p-y-md {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important
+}
+
+.p-a-lg {
+    padding: 45px !important
+}
+
+.p-t-lg {
+    padding-top: 45px !important
+}
+
+.p-r-lg {
+    padding-right: 45px !important
+}
+
+.p-b-lg {
+    padding-bottom: 45px !important
+}
+
+.p-l-lg {
+    padding-left: 45px !important
+}
+
+.p-x-lg {
+    padding-right: 45px !important;
+    padding-left: 45px !important
+}
+
+.p-y-lg {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important
+}
+
+.panel-floating-fixed.panelClosed {
+     -webkit-animation-name: panelOutDown;
+     animation-name: panelOutDown;
+     -webkit-animation-delay: 0s;
+     animation-delay: 0s;
+     -webkit-animation-duration: 1s;
+     animation-duration: 1s;
+}
+
+.panel-floating-fixed {
+    display: block;
+    position: fixed;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+    margin-bottom: 0;
+    border-top: 5px solid #ee30d9;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 4;
+    -webkit-animation-name: panelInUp;
+    animation-name: panelInUp;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+}
+
+.animated {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.panel-floating {
+    border-top: 5px solid #ee30d9;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.btn-full-width {
+    width: 100%;
+}
+
+
+.topContent {
+    padding: 5px 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.3) inset;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.footer-container {
+    margin-top: 5px;
+    background-color: #0b2f3d;
+}
+
+.copyright {
+    font-size: 1.5rem;
+    line-height: 2em;
+    vertical-align: middle;
+    color: white;
+}
+
+
+.tab-content {
+    position: relative;
+    overflow-y: auto;
+    max-height: 450px;
+}
+
+.nav-tabs > li > a {
+    border-radius: 0!important;
+}
+
+
+
+body,
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    min-width: 1280px;
+}
+
+/* リードテキストのフォントサイズを変更させない */
+.lead {
+    font-size: 16px;
+}
+
+/* ページヘッダの間隔を調整 */
+.page-header {
+    margin-bottom: 30px;
+}
+.page-header .lead {
+    margin-bottom: 10px;
+}
+
+
+
+/* .containerをリセット */
+.container {
+    min-width: 1280px;
+    max-width: none !important;
+}
+
+
+.container .navbar-header,
+.container .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* 常にナビゲーションバーを左寄せ */
+.navbar-header {
+    float: left;
+}
+
+/* 折りたたみ中のナビゲーションバーを元に戻す */
+.navbar-collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+    visibility: visible !important;
+}
+
+.navbar-toggle {
+    display: none;
+}
+.navbar-collapse {
+    border-top: 0;
+}
+
+.navbar-brand {
+    margin-left: -15px;
+}
+
+/* ナビゲーションバーを常に左寄せに適用 */
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.navbar-nav > li {
+    float: left;
+}
+.navbar-nav > li > a {
+    padding: 15px;
+}
+
+/* 上記でfloatを再定義したので右寄せ用に再設定 */
+.navbar-nav.navbar-right {
+    float: right;
+}
+
+/* カスタムのドロップダウンを元に戻す */
+.navbar .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-width: 0 1px 1px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff !important;
+    background-color: #428bca !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #999 !important;
+    background-color: transparent !important;
+}
+
+/* フォームの展開を元に戻す */
+.navbar-form {
+    float: left;
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* .form-inlineスタイルをミックスインするので、forms.lessからコピーして貼り付け */
+.navbar-form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.navbar-form .form-control-static {
+    display: inline-block;
+}
+
+.navbar-form .input-group {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.navbar-form .input-group .input-group-addon,
+.navbar-form .input-group .input-group-btn,
+.navbar-form .input-group .form-control {
+    width: auto;
+}
+
+.navbar-form .input-group > .form-control {
+    width: 100%;
+}
+
+.navbar-form .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.navbar-form .radio,
+.navbar-form .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.navbar-form .radio label,
+.navbar-form .checkbox label {
+    padding-left: 0;
+}
+
+.navbar-form .radio input[type="radio"],
+.navbar-form .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+}
+
+.navbar-form .has-feedback .form-control-feedback {
+    top: 0;
+}
+
+/* 小サイズ画面での横並びフォームの圧縮の取消 */
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.form-inline .form-control-static {
+    display: inline-block;
+}
+
+.form-inline .input-group {
+    display: inline-table;
+    vertical-align: middle;
+}
+.form-inline .input-group .input-group-addon,
+.form-inline .input-group .input-group-btn,
+.form-inline .input-group .form-control {
+    width: auto;
+}
+
+.form-inline .input-group > .form-control {
+    width: 100%;
+}
+
+.form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.form-inline .radio,
+.form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.form-inline .radio label,
+.form-inline .checkbox label {
+    padding-left: 0;
+}
+
+.form-inline .radio input[type="radio"],
+.form-inline .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+}
+
+.form-inline .has-feedback .form-control-feedback {
+    top: 0;
+}

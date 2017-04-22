@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="node_modules/openlayers/dist/ol.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="node_modules/openlayers/dist/ol.js"></script>
+</head>
+<body>
+<header class="header">
+
+    <nav class=" navbar navbar-default navbar-static-top m-b-0">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand"><img src="../img/logo.png" alt="Bootstrap" width="270"></a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="p-a">
+                        <span>名前</span>
+                    </li>
+                    <li class="p-a">
+                        <button class="btn btn-default">ログアウト</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div><!-- container1 -->
+
+        <div class="container-fluid">
+            <div class="text-center">
+                <span style="font-size: 20px">タイトル</span>
+                <span class="pull-right">設定</span>
+            </div>
+        </div><!-- container2 -->
+    </nav>
+
+</header>
+
+<div class="topContent">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 text-center alert alert-danger m-b-0">
+                <h2>タイトル</h2>
+                <p>説明。</p>
+            </div>
+            <div class="col-xs-2">
+                <button class="btn btn-lg btn-default pull-right">戻る</button>
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-3 p-r-0 p-l-0" style="border-right: 1px solid black">
+            <div>
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab"
+                                                              data-toggle="tab">タブ１</a></li>
+                    <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">タブ２</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">パネルのヘッダ</div>
+                            <div class="panel-body">
+                                パネルのコンテンツ
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">パネルのヘッダ</div>
+                            <div class="panel-body">
+                                パネルのコンテンツ
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">パネルのヘッダ</div>
+                            <div class="panel-body">
+                                パネルのコンテンツ
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">パネルのヘッダ</div>
+                            <div class="panel-body">
+                                パネルのコンテンツ
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">パネルのヘッダ</div>
+                            <div class="panel-body">
+                                パネルのコンテンツ
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">パネルのヘッダ</div>
+                            <div class="panel-body">
+                                パネルのコンテンツ
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">パネルのヘッダ</div>
+                            <div class="panel-body">
+                                パネルのコンテンツ
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab2">...</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-9 p-l-0 p-r-0">
+            <div id="map"></div>
+        </div>
+    </div><!-- row -->
+</div><!-- container -->
+<div class="container-fluid" style="border-top: 1px solid black">
+    <div class="row">
+        <div class="col-xs-3 m-r-0" style="border-right: 1px solid black">
+            <div class="p-t">
+                <button class="btn btn-lg btn-default">一覧</button>
+                <button class="btn btn-lg btn-default">一覧</button>
+                <button class="btn btn-lg btn-default">一覧</button>
+            </div>
+        </div>
+        <div class="col-xs-9 m-l-0">
+            <div class="row">
+                <div class="col-xs-10">
+                    <div class="p-t">
+                        <div class="alert alert-success m-b-0">
+                            <h2>タイトル</h2>
+                            <p>説明。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="p-t">
+                        <button class="btn btn-lg btn-default pull-right">一覧</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- row -->
+</div><!-- container -->
+<footer class="footer-container">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row m-a-0">
+                <div class="col-xs-12">
+                    <p class="copyright pull-right">©2017 foo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="fixedContent" class="panel panel-default panel-floating panel-floating-fixed animated">
+    <div class="panel-body">
+        <button type="button" class="close closeAction">
+            <span aria-hidden="true">×</span>
+        </button>
+        <small class="text-uppercase text-muted">お知らせ</small>
+        <h5 class="m-t-0">タイトル</h5>
+        <p class="text-muted m-b">内容</p>
+        <button class="closeAction btn btn-primary btn-full-width">ボタン</button>
+    </div>
+</div>
+</body>
+</html>

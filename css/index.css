@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @keyframes panelInUp {
-    0%,100% {
+    0%, 100% {
         -webkit-transition-timing-function: cubic-bezier(0.23, 0.77, 0.34, 0.99);
         transition-timing-function: cubic-bezier(0.23, 0.77, 0.34, 0.99)
     }
@@ -18,7 +18,7 @@
 }
 
 @keyframes panelOutDown {
-    0%,100% {
+    0%, 100% {
         -webkit-transition-timing-function: cubic-bezier(0.23, 0.77, 0.34, 0.99);
         transition-timing-function: cubic-bezier(0.23, 0.77, 0.34, 0.99)
     }
@@ -34,24 +34,38 @@
     }
 }
 
-.blink_class{
-    -webkit-animation:blink 1.0s step-end infinite alternate;
-    -moz-animation:blink 1.0s step-end infinite alternate;
-    animation:blink 1.0s step-end infinite alternate;
+.blink_class {
+    -webkit-animation: blink 1.0s step-end infinite alternate;
+    -moz-animation: blink 1.0s step-end infinite alternate;
+    animation: blink 1.0s step-end infinite alternate;
 }
 
 /* 点滅 */
-@-webkit-keyframes blink{
-    21%,40%,61%,80%,100% {opacity:0;}
-    0%,20%,41%,60%,81%,99% {opacity:1;}
+@-webkit-keyframes blink {
+    21%, 40%, 61%, 80%, 100% {
+        opacity: 0;
+    }
+    0%, 20%, 41%, 60%, 81%, 99% {
+        opacity: 1;
+    }
 }
-@-moz-keyframes blink{
-    21%,40%,61%,80%,100% {opacity:0;}
-    0%,20%,41%,60%,81%,99% {opacity:1;}
+
+@-moz-keyframes blink {
+    21%, 40%, 61%, 80%, 100% {
+        opacity: 0;
+    }
+    0%, 20%, 41%, 60%, 81%, 99% {
+        opacity: 1;
+    }
 }
-@keyframes blink{
-    21%,40%,61%,80%,100% {opacity:0;}
-    0%,20%,41%,60%,81%,99% {opacity:1;}
+
+@keyframes blink {
+    21%, 40%, 61%, 80%, 100% {
+        opacity: 0;
+    }
+    0%, 20%, 41%, 60%, 81%, 99% {
+        opacity: 1;
+    }
 }
 
 .panel-body h5 {
@@ -365,18 +379,18 @@
 }
 
 .panel-floating-fixed.panelClosed {
-     -webkit-animation-name: panelOutDown;
-     animation-name: panelOutDown;
-     -webkit-animation-delay: 0s;
-     animation-delay: 0s;
-     -webkit-animation-duration: 1s;
-     animation-duration: 1s;
+    -webkit-animation-name: panelOutDown;
+    animation-name: panelOutDown;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .panel-floating-fixed {
     display: block;
     position: fixed;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     /*bottom: 20px;*/
     top: 100px;
     right: 40%;
@@ -403,17 +417,16 @@
 .panel-floating {
     border-top: 5px solid #ee30d9;
     overflow: hidden;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-full-width {
     width: 100%;
 }
 
-
 .topContent {
     padding: 5px 0;
-    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.3) inset;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3) inset;
     border-bottom: 1px solid #9d9d9d;
 }
 
@@ -429,7 +442,6 @@
     color: white;
 }
 
-
 .tab-content {
     position: relative;
     overflow-y: auto;
@@ -437,10 +449,8 @@
 }
 
 .nav-tabs > li > a {
-    border-radius: 0!important;
+    border-radius: 0 !important;
 }
-
-
 
 body,
 .navbar-fixed-top,
@@ -457,18 +467,16 @@ body,
 .page-header {
     margin-bottom: 30px;
 }
+
 .page-header .lead {
     margin-bottom: 10px;
 }
-
-
 
 /* .containerをリセット */
 .container {
     min-width: 1280px;
     max-width: none !important;
 }
-
 
 .container .navbar-header,
 .container .navbar-collapse {
@@ -493,6 +501,7 @@ body,
 .navbar-toggle {
     display: none;
 }
+
 .navbar-collapse {
     border-top: 0;
 }
@@ -506,9 +515,11 @@ body,
     float: left;
     margin: 0;
 }
+
 .navbar-nav > li {
     float: left;
 }
+
 .navbar-nav > li > a {
     padding: 15px;
 }
@@ -530,9 +541,11 @@ body,
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
+
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #333;
 }
+
 .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar .navbar-nav .open .dropdown-menu > li > a:focus,
 .navbar .navbar-nav .open .dropdown-menu > .active > a,
@@ -541,6 +554,7 @@ body,
     color: #fff !important;
     background-color: #428bca !important;
 }
+
 .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
 .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
 .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -642,6 +656,7 @@ body,
     display: inline-table;
     vertical-align: middle;
 }
+
 .form-inline .input-group .input-group-addon,
 .form-inline .input-group .input-group-btn,
 .form-inline .input-group .form-control {
@@ -664,6 +679,7 @@ body,
     margin-bottom: 0;
     vertical-align: middle;
 }
+
 .form-inline .radio label,
 .form-inline .checkbox label {
     padding-left: 0;
@@ -679,16 +695,70 @@ body,
     top: 0;
 }
 
-.card {
+.z-card {
     background: #fff;
-    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-    -webkit-transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
-    transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    -webkit-transition: box-shadow .28s cubic-bezier(.4, 0, .2, 1);
+    transition: box-shadow .28s cubic-bezier(.4, 0, .2, 1);
     will-change: box-shadow;
     display: block;
     position: relative;
     padding: 24px;
     border-radius: 2px;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #DDD;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    border-width: 0;
+}
+
+.nav-tabs > li > a {
+    border: none;
+    color: #666;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+    border: none;
+    color: #4285F4 !important;
+    background: transparent;
+}
+
+.nav-tabs > li > a::after {
+    content: "";
+    background: #4285F4;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+    transform: scale(1);
+}
+
+.tab-nav > li > a::after {
+    background: #21527d none repeat scroll 0 0;
+    color: #fff;
+}
+
+.tab-pane {
+    padding: 15px 0;
+}
+
+.tab-content {
+    padding: 20px
+}
+
+.card {
+    background: #FFF none repeat scroll 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
 }
 
 .z-box-shadow-0 {

@@ -36,7 +36,7 @@
         </div><!-- container1 -->
 
         <div class="container-fluid">
-            <div class="text-center">
+            <div class="text-cente ">
                 <span style="font-size: 20px">タイトル</span>
                 <span class="pull-right">設定</span>
             </div>
@@ -49,8 +49,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 text-center alert alert-danger m-b-0">
-                <h2>タイトル</h2>
-                <p>説明。</p>
+                <div class="blink_class">
+                    <h2>タイトル</h2>
+                    <p>説明。</p>
+                </div>
             </div>
             <div class="col-xs-2">
                 <button class="btn btn-lg btn-default pull-right">戻る</button>
@@ -151,6 +153,41 @@
         </div>
     </div><!-- row -->
 </div><!-- container -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- Nav tabs -->
+            <div class="card">
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                              data-toggle="tab">Home</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+                    </li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+                    </li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        home
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        profile
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        messages
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">
+                        settings
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <footer class="footer-container">
     <div class="container-fluid">
         <div class="container">
